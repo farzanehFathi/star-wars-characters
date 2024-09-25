@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import GetPeople from "./GetPeople";
+
+import { Pagination } from "antd";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(1);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Star Wars</h1>
+      <GetPeople num={currentPage} />
+
+      <Pagination
+        align="center"
+        total={82}
+        defaultCurrent={1}
+        current={currentPage}
+        onChange={(currentPage) => setCurrentPage(currentPage)}
+        pageSize={1}
+        showSizeChanger={false}
+        showQuickJumper={true}
+      />
     </div>
   );
 }
