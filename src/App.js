@@ -1,28 +1,21 @@
-import { useState } from "react";
-import GetPeople from "./GetPeople";
-
-import { Pagination } from "antd";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import RootLayout from "./layouts/RootLayout";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(1);
-
-  return (
-    <div>
-      <h1>Star Wars</h1>
-      <GetPeople num={currentPage} />
-
-      <Pagination
-        align="center"
-        total={82}
-        defaultCurrent={1}
-        current={currentPage}
-        onChange={(currentPage) => setCurrentPage(currentPage)}
-        pageSize={1}
-        showSizeChanger={false}
-        showQuickJumper={true}
-      />
-    </div>
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+      </Route>
+    )
   );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
