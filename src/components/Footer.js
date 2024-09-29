@@ -2,7 +2,7 @@ import ColorPalette from "../styles/ColorPalette";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer style={{ paddingBottom: 50 }}>
       <p style={{ textAlign: "center", color: `${ColorPalette.textPrimary}` }}>
         {" "}
         <a

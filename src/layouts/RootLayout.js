@@ -1,5 +1,9 @@
 import { Outlet } from "react-router-dom";
+
+//
 import ColorPalette from "../styles/ColorPalette";
+
+// Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 

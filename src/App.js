@@ -4,8 +4,12 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./pages/Home";
+
+// Layouts
 import RootLayout from "./layouts/RootLayout";
+
+// Pages
+import Home from "./pages/Home";
 
 function App() {
   const router = createBrowserRouter(
