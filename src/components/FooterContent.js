@@ -1,23 +1,20 @@
-import ColorPalette from "../styles/ColorPalette";
-
-const Footer = () => {
+const FooterContent = () => {
   return (
-    <footer style={{ paddingBottom: 50 }}>
-      <p style={{ textAlign: "center", color: `${ColorPalette.textPrimary}` }}>
+    <>
+      <p style={{ textAlign: "center" }}>
         {" "}
         <a
           href="https://github.com/farzanehFathi/star-wars-characters"
           style={{
             textDecoration: "none",
-            color: `${ColorPalette.textSecondary}`,
           }}
         >
           Open source project
         </a>{" "}
         developed by Farzaneh ©2024{" "}
       </p>
-    </footer>
+    </>
   );
 };
 
-export default Footer;
+export default FooterContent;

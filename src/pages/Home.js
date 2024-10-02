@@ -1,11 +1,7 @@
-import GetPeople from "../components/GetPeople";
+import People from "../components/People";
 
 const Home = () => {
-  return (
-    <div style={{ width: "70%", margin: "auto" }}>
-      <GetPeople />
-    </div>
-  );
+  return <People />;
 };
 
 export default Home;
