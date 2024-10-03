@@ -6,17 +6,7 @@ import RootStyle from "../styles/RootStyle";
 // Components
 
 const RootLayout = () => {
-  return (
-    <RootStyle
-      content={
-        <>
-          <main style={{ width: "90%", margin: "auto" }}>
-            <Outlet />
-          </main>
-        </>
-      }
-    />
-  );
+  return <RootStyle content={<Outlet />} />;
 };
 
 export default RootLayout;

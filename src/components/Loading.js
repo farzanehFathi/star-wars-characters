@@ -4,7 +4,7 @@ import { FourSquare } from "react-loading-indicators";
 // Styles
 import ColorPalette from "../styles/ColorPalette";
 
-const Loading = () => {
+const Loading = ({ color }) => {
   return (
     <Flex justify="center" style={{ margin: "30px 0" }}>
       <FourSquare

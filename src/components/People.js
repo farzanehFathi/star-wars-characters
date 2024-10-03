@@ -19,7 +19,7 @@ const People = () => {
   const PeopleInstances = data?.map((person) => <PeopleCard person={person} />);
 
   return (
-    <div>
+    <>
       {isPending ? (
         <Loading />
       ) : isError ? (
@@ -48,7 +48,7 @@ const People = () => {
         showSizeChanger={false}
         showQuickJumper={true}
       />
-    </div>
+    </>
   );
 };
 

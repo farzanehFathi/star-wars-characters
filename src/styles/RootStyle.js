@@ -10,44 +10,50 @@ const RootStyle = ({ content }) => {
       theme={{
         components: {
           Layout: {
-            headerColor: "#FFE300",
             headerBg: "#1C1E22",
+            headerHeight: 75,
           },
+
+          Typography: {
+            colorWarning: "#FFE300",
+            colorTextHeading: "#FFE300",
+          },
+
           Card: {
             colorText: "#272B30",
+            colorBgContainer: "#F5F5F5",
             headerBg: "#1C1E22",
             colorTextHeading: "#FFE300",
-            colorBgContainer: "#F5F5F5",
             headerFontSize: 18,
             fontWeightStrong: 700,
           },
         },
         token: {
-          // Seed Token
+          colorTextBase: "#C8C8C8",
           colorPrimary: "#FFE300",
           colorBgContainer: "#1C1E22",
           colorBgSolidActive: "#FFE300",
           colorBgLayout: "#272B30",
-          colorTextBase: "#C8C8C8",
           colorLinkActive: "#FFE300",
           colorLink: "#FFE300",
         },
       }}
     >
       {" "}
-      <style>{`.active {color:#FFE300 }`}</style>
-      <Layout>
-        {""}
-        <Header>
+      <Layout style={{ minHeight: "100vh" }}>
+        <Header style={{ width: "100%", padding: "0 5%", margin: "0 auto" }}>
           <HeaderContent />
         </Header>
 
-        <Content>{content}</Content>
+        <Content
+          style={{ width: "100%", padding: "30px 5%", margin: "0 auto" }}
+        >
+          {content}
+        </Content>
 
-        <Footer>
-          <FooterContent />
+        <Footer style={{ width: "100%", padding: "30px 5%", margin: "0 auto" }}>
+          <FooterContent style={{ width: "90%", margin: "0 auto" }} />
         </Footer>
-        {""}
       </Layout>
     </ConfigProvider>
   );

@@ -22,7 +22,7 @@ const PeopleCard = ({ person }) => {
               span={labelSpan}
               style={{ textAlign: "left", fontWeight: "bold" }}
             >
-              <div>height:</div>
+              <div>Height:</div>
               <div>Mass:</div>
               <div>Hair Color:</div>
               <div>Skin Color:</div>

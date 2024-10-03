@@ -1,25 +1,17 @@
-import { Flex } from "antd";
+import { Flex, Typography } from "antd";
 
 //Components
-import Navbar from "./Navbar";
+import NavButtons from "./NavButtons";
 
 const HeaderContent = () => {
   return (
     <>
-      <Flex
-        justify="space-between"
-        align="center"
-        style={{ width: "90%", margin: "0 auto" }}
-      >
-        <h1
-          style={{
-            margin: 0,
-            marginLeft: 20,
-          }}
-        >
+      <Flex justify="space-between" align="center">
+        <Typography.Title level={1} style={{ margin: 0 }}>
+          {" "}
           Star Wars
-        </h1>
-        <Navbar />
+        </Typography.Title>
+        <NavButtons />
       </Flex>
     </>
   );

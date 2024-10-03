@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { Button, Space } from "antd";
 
-const Navbar = () => {
+const NavButtons = () => {
   return (
-    <div>
+    <>
       <Space>
         <NavLink to="/">
           <Button>People</Button>
@@ -13,8 +13,8 @@ const Navbar = () => {
           <NavLink to="/planets">Planets</NavLink>
         </Button>
       </Space>
-    </div>
+    </>
   );
 };
 
-export default Navbar;
+export default NavButtons;

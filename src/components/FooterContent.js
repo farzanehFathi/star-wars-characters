@@ -1,16 +1,16 @@
+import { Typography } from "antd";
+
 const FooterContent = () => {
   return (
     <>
       <p style={{ textAlign: "center" }}>
         {" "}
-        <a
+        <Typography.Link
           href="https://github.com/farzanehFathi/star-wars-characters"
-          style={{
-            textDecoration: "none",
-          }}
+          style={{}}
         >
           Open source project
-        </a>{" "}
+        </Typography.Link>{" "}
         developed by Farzaneh ©2024{" "}
       </p>
     </>

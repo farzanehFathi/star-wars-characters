@@ -1,21 +1,18 @@
-import ColorPalette from "../styles/ColorPalette";
+import { Flex, Space, Typography } from "antd";
 
 const ErrorMssg = ({ mssg }) => {
   return (
-    <div>
-      <p style={{ color: `${ColorPalette.textSecondary}`, fontSize: 42 }}>
-        {":( "}
-      </p>
+    <Flex justify="center" style={{ margin: "10% 0" }}>
+      <Space direction="vertical">
+        <Typography.Paragraph type="warning" style={{ fontSize: 42 }}>
+          {":( "}
+        </Typography.Paragraph>
 
-      <p
-        style={{
-          fontSize: 24,
-          color: `${ColorPalette.textPrimary}`,
-        }}
-      >
-        {mssg}
-      </p>
-    </div>
+        <Typography.Paragraph style={{ fontSize: 24 }}>
+          {mssg}
+        </Typography.Paragraph>
+      </Space>
+    </Flex>
   );
 };
 
