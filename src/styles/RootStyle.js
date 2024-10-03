@@ -18,7 +18,11 @@ const RootStyle = ({ content }) => {
             colorWarning: "#FFE300",
             colorTextHeading: "#FFE300",
           },
-
+          Button: {
+            colorBgContainer: "#FFE300",
+            colorText: "#272B30",
+            colorBorder: "#FFE300",
+          },
           Card: {
             colorText: "#272B30",
             colorBgContainer: "#F5F5F5",

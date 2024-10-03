@@ -41,10 +41,10 @@ const People = () => {
           marginBottom: 50,
         }}
         align="center"
-        total={9}
+        total={82}
         current={page}
         onChange={(page) => setPage(page)}
-        pageSize={1}
+        pageSize={10}
         showSizeChanger={false}
         showQuickJumper={true}
       />

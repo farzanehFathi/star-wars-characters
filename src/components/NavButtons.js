@@ -1,19 +1,21 @@
+import { Flex, Button } from "antd";
 import { NavLink } from "react-router-dom";
-import { Button, Space } from "antd";
 
 const NavButtons = () => {
   return (
-    <>
-      <Space>
-        <NavLink to="/">
-          <Button>People</Button>
-        </NavLink>
+    <Flex className="NavContainer" justify="end" gap={20} align="center">
+      <NavLink to="/">People</NavLink>
 
-        <Button>
-          <NavLink to="/planets">Planets</NavLink>
-        </Button>
-      </Space>
-    </>
+      <NavLink to="/planets">Planets</NavLink>
+
+      <NavLink to="/films">Films</NavLink>
+
+      <NavLink to="/species">Species</NavLink>
+
+      <NavLink to="/starships">Starships</NavLink>
+
+      <NavLink to="/vehicles">Vehicles</NavLink>
+    </Flex>
   );
 };
 
