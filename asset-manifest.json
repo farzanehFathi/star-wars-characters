@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/star-wars-characters/static/css/main.001025ca.css",
+    "main.js": "/star-wars-characters/static/js/main.157c8b1b.js",
+    "index.html": "/star-wars-characters/index.html",
+    "main.001025ca.css.map": "/star-wars-characters/static/css/main.001025ca.css.map",
+    "main.157c8b1b.js.map": "/star-wars-characters/static/js/main.157c8b1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.001025ca.css",
+    "static/js/main.157c8b1b.js"
+  ]
+}
