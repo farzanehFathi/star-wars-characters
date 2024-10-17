@@ -1,8 +1,9 @@
 import { Flex, Card, Row, Col, Button, Typography } from "antd";
+import { Link } from "react-router-dom";
 
 const { Text } = Typography;
 
-const PlanetsCard = ({ planet }) => {
+const PlanetsCard = ({ planet, id }) => {
   const labelSpan = 10;
   const valueSpan = 14;
   return (
@@ -65,7 +66,9 @@ const PlanetsCard = ({ planet }) => {
             </div>
           </Col>
         </Row>
-        <Button style={{ width: "100%", margin: "5% 0" }}>Details </Button>
+        <Link to={id.toString()}>
+          <Button style={{ width: "100%", margin: "5% 0" }}>Details </Button>
+        </Link>
       </Card>
     </Flex>
   );

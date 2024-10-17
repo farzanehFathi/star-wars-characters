@@ -1,6 +1,7 @@
 import { Card, Flex, Row, Col, Button } from "antd";
+import { Link } from "react-router-dom";
 
-const PeopleCard = ({ person }) => {
+const PeopleCard = ({ person, id }) => {
   const labelSpan = 12;
   const valueSpan = 12;
 
@@ -39,7 +40,9 @@ const PeopleCard = ({ person }) => {
             <div>{`${person.gender}`}</div>
           </Col>
         </Row>
-        <Button style={{ width: "100%", margin: "5% 0" }}>Details </Button>
+        <Link to={id.toString()}>
+          <Button style={{ width: "100%", margin: "5% 0" }}>Details </Button>
+        </Link>
       </Card>
     </Flex>
   );

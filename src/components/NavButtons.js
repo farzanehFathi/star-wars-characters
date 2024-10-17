@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavButtons = () => {
   return (
     <Flex className="NavContainer" justify="end" gap={20} align="center">
-      <NavLink to="/">People</NavLink>
+      <NavLink to="/people">People</NavLink>
 
       <NavLink to="/planets">Planets</NavLink>
 

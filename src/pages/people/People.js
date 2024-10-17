@@ -3,12 +3,12 @@ import { Flex } from "antd";
 import { useState } from "react";
 
 // Services
-import { PeopleQuery } from "../services/queries";
+import { PeopleQuery } from "../../services/queries";
 
 // Components
-import PeopleCard from "./PeopleCard";
-import Loading from "./Loading";
-import ErrorMssg from "./ErrorMssg";
+import PeopleCard from "../../components/PeopleCard";
+import Loading from "../../components/Loading";
+import ErrorMssg from "../../components/ErrorMssg";
 
 const People = () => {
   const [page, setPage] = useState(1);
@@ -16,7 +16,9 @@ const People = () => {
   const { data, isPending, error, isError, isPlaceholderData, isFetching } =
     PeopleQuery(page);
 
-  const PeopleInstances = data?.map((person) => <PeopleCard person={person} />);
+  const PeopleInstances = data?.map((person, index) => (
+    <PeopleCard key={index} person={person} id={(page - 1) * 10 + index + 1} />
+  ));
 
   return (
     <>

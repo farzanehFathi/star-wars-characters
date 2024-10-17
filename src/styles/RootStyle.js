@@ -20,9 +20,11 @@ const RootStyle = ({ content }) => {
             colorTextHeading: "#FFE300",
           },
           Button: {
-            colorBgContainer: "#FFE300",
-            colorText: "#272B30",
-            colorBorder: "#FFE300",
+            colorBgContainer: "#454A4E",
+            colorText: "#C8C8C8",
+            colorBorder: "#272B30",
+            textTextHoverColor: "FFE300",
+            defaultHoverBg: "#444950",
           },
           Card: {
             colorText: "#272B30",
