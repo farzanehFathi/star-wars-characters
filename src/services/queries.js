@@ -1,4 +1,6 @@
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
+
+// Services API
 import { getPeople, getPlanets } from "./api";
 
 export function PeopleQuery(page) {

@@ -15,6 +15,7 @@ const RootStyle = ({ content }) => {
           },
 
           Typography: {
+            colorText: "#272B30",
             colorWarning: "#FFE300",
             colorTextHeading: "#FFE300",
           },
