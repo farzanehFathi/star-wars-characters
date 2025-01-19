@@ -16,10 +16,6 @@ const People = () => {
   const { data, isPending, error, isError, isPlaceholderData, isFetching } =
     PeopleQuery(page);
 
-  const PeopleInstances = data?.map((person, index) => (
-    <PeopleCard key={index} person={person} id={(page - 1) * 10 + index + 1} />
-  ));
-
   return (
     <>
       {isPending ? (
@@ -33,7 +29,13 @@ const People = () => {
           justify="center"
           style={{ margin: "30px 0" }}
         >
-          {PeopleInstances}
+          {data?.map((person, index) => (
+            <PeopleCard
+              key={index}
+              person={person}
+              id={(page - 1) * 10 + index + 1}
+            />
+          ))}
         </Flex>
       )}
 
