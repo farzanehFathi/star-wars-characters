@@ -4,7 +4,7 @@ import { Atom } from "react-loading-indicators";
 // Styles
 import ColorPalette from "../styles/ColorPalette";
 
-const Loading = ({ color }) => {
+const UnderConstruction = () => {
   return (
     <Flex justify="center" style={{ margin: "30px 0" }}>
       <Atom
@@ -17,4 +17,4 @@ const Loading = ({ color }) => {
   );
 };
 
-export default Loading;
+export default UnderConstruction;
