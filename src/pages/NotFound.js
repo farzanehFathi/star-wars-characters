@@ -4,8 +4,8 @@ import UnderConstruction from "../components/UnderConstruction";
 
 const NotFound = () => {
   return (
-    <Flex justify="center" style={{ margin: "10% 0" }}>
-      <Typography.Paragraph style={{ fontSize: 24 }}>
+    <Flex justify="center">
+      <Typography.Paragraph style={{ fontSize: 24 }} type="warning">
         SWAPI is Under Construction
       </Typography.Paragraph>
       <UnderConstruction />
