@@ -44,7 +44,7 @@ function App() {
           />
         </Route>
 
-        <Route path="films" element={<Films />} />
+        {/* <Route path="films" element={<Films />} /> */}
         <Route path="*" element={<NotFound />} />
       </Route>
     )
