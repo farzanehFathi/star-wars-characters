@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import People from "./pages/people/People";
 import Planets from "./pages/planets/Planets";
 import Films from "./pages/Films";
+import NotFound from "./pages/NotFound";
 
 import PeopleDetails, {
   peopleDetailsLoader,
@@ -44,6 +45,7 @@ function App() {
         </Route>
 
         <Route path="films" element={<Films />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     )
   );
